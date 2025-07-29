@@ -51,53 +51,20 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Nueva paleta de colores
-        'wine-red': {
-          DEFAULT: '#8B0000',
-          50: '#f5e6e6',
-          100: '#e4c4c4',
-          200: '#d2a1a1',
-          300: '#c07f7f',
-          400: '#ae5c5c',
-          500: '#8B0000', // Rojo Vino
-          600: '#7c0000',
-          700: '#6d0000',
-          800: '#5e0000',
-          900: '#4f0000',
-          950: '#2a0000',
+        // Colores coral personalizados
+        coral: {
+          50: '#fef7f7',
+          100: '#fdeaea',
+          200: '#fbd5d5',
+          300: '#f7b2b2',
+          400: '#f18a8a',
+          500: '#e85a5a',
+          600: '#d63c3c',
+          700: '#b32d2d',
+          800: '#942929',
+          900: '#7c2727',
+          950: '#431111',
         },
-        cream: {
-          DEFAULT: '#FFFDD0',
-          50: '#ffffff',
-          100: '#fffef0',
-          200: '#fffde0',
-          300: '#fffce0',
-          400: '#fffad0',
-          500: '#FFFDD0', // Crema
-          600: '#e6e4bb',
-          700: '#cccba7',
-          800: '#b3b192',
-          900: '#99987e',
-          950: '#525243',
-        },
-        'dark-gray': {
-          DEFAULT: '#333333',
-          50: '#f2f2f2',
-          100: '#e6e6e6',
-          200: '#cccccc',
-          300: '#b3b3b3',
-          400: '#999999',
-          500: '#808080',
-          600: '#666666',
-          700: '#4d4d4d',
-          800: '#333333', // Gris Oscuro
-          900: '#1a1a1a',
-          950: '#0d0d0d',
-        }
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

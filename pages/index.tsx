@@ -105,81 +105,81 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-cream-500 text-dark-gray-800">
-        {/* Header */}
-        <header className="sticky top-0 z-50 bg-cream-500 border-b border-dark-gray-200">
+      <main className="min-h-screen bg-white">
+        {/* Header estilo Airbnb */}
+        <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
               {/* Logo */}
               <div className="flex items-center">
-                <div className="bg-wine-red-500 p-2 rounded-lg">
-                  <Home className="h-6 w-6 text-cream-50" />
+                <div className="bg-gradient-to-r from-coral-500 to-coral-600 p-2 rounded-lg">
+                  <Home className="h-6 w-6 text-white" />
                 </div>
-                <span className="ml-3 text-2xl font-bold text-wine-red-500">Solarix</span>
+                <span className="ml-3 text-2xl font-bold text-coral-500">Solarix</span>
               </div>
               
               {/* Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-                <Link href="/" className="text-dark-gray-700 hover:text-wine-red-500 font-medium">Alojamientos</Link>
-                <Link href="/experiencias" className="text-dark-gray-700 hover:text-wine-red-500 font-medium">Experiencias</Link>
-                <Link href="/servicios" className="text-dark-gray-700 hover:text-wine-red-500 font-medium">Servicios</Link>
+                <Link href="/" className="text-gray-700 hover:text-gray-900 font-medium">Alojamientos</Link>
+                <Link href="/experiencias" className="text-gray-700 hover:text-gray-900 font-medium">Experiencias</Link>
+                <Link href="/servicios" className="text-gray-700 hover:text-gray-900 font-medium">Servicios</Link>
               </nav>
               
               {/* User menu */}
               <div className="flex items-center space-x-4">
-                <Link href="/anfitrion" className="text-dark-gray-700 hover:text-wine-red-500 font-medium hidden md:block">
+                <Link href="/anfitrion" className="text-gray-700 hover:text-gray-900 font-medium hidden md:block">
                   Conviértete en anfitrión
                 </Link>
-                <Globe className="h-5 w-5 text-dark-gray-700 cursor-pointer" />
-                <div className="flex items-center space-x-2 border border-dark-gray-300 rounded-full py-2 px-3 hover:shadow-md transition-shadow cursor-pointer">
-                  <Menu className="h-4 w-4 text-dark-gray-700" />
-                  <div className="w-8 h-8 bg-dark-gray-500 rounded-full"></div>
+                <Globe className="h-5 w-5 text-gray-700 cursor-pointer" />
+                <div className="flex items-center space-x-2 border border-gray-300 rounded-full py-2 px-3 hover:shadow-md transition-shadow cursor-pointer">
+                  <Menu className="h-4 w-4 text-gray-700" />
+                  <div className="w-8 h-8 bg-gray-500 rounded-full"></div>
                 </div>
               </div>
             </div>
           </div>
         </header>
 
-        {/* Hero Section */}
-        <section className="py-20 bg-cream-500">
+        {/* Hero Section estilo Airbnb */}
+        <section className="py-20 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold text-dark-gray-900 mb-8 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8 leading-tight">
               Encuentra tu próximo
               <br />
-              <span className="text-wine-red-500">destino ideal</span>
+              <span className="text-coral-500">destino ideal</span>
             </h1>
-            <p className="text-xl text-dark-gray-600 mb-12 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
               Descubre propiedades únicas, experiencias inolvidables y conecta con una comunidad global de anfitriones.
             </p>
             
-            {/* Search Bar */}
+            {/* Barra de búsqueda estilo Airbnb */}
             <div className="max-w-4xl mx-auto">
-              <div className="bg-cream-50 rounded-full shadow-lg border border-dark-gray-200 p-2">
+              <div className="bg-white rounded-full shadow-lg border border-gray-200 p-2">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
-                  <div className="flex items-center px-6 py-4 hover:bg-cream-100 rounded-full cursor-pointer">
+                  <div className="flex items-center px-6 py-4 hover:bg-gray-50 rounded-full cursor-pointer">
                     <div className="text-left">
-                      <div className="text-xs font-semibold text-dark-gray-900 uppercase tracking-wide">Destino</div>
-                      <div className="text-sm text-dark-gray-500">¿A dónde vas?</div>
+                      <div className="text-xs font-semibold text-gray-900 uppercase tracking-wide">Destino</div>
+                      <div className="text-sm text-gray-500">¿A dónde vas?</div>
                     </div>
                   </div>
-                  <div className="flex items-center px-6 py-4 hover:bg-cream-100 rounded-full cursor-pointer border-l border-dark-gray-200">
+                  <div className="flex items-center px-6 py-4 hover:bg-gray-50 rounded-full cursor-pointer border-l border-gray-200">
                     <div className="text-left">
-                      <div className="text-xs font-semibold text-dark-gray-900 uppercase tracking-wide">Llegada</div>
-                      <div className="text-sm text-dark-gray-500">Agregar fechas</div>
+                      <div className="text-xs font-semibold text-gray-900 uppercase tracking-wide">Llegada</div>
+                      <div className="text-sm text-gray-500">Agregar fechas</div>
                     </div>
                   </div>
-                  <div className="flex items-center px-6 py-4 hover:bg-cream-100 rounded-full cursor-pointer border-l border-dark-gray-200">
+                  <div className="flex items-center px-6 py-4 hover:bg-gray-50 rounded-full cursor-pointer border-l border-gray-200">
                     <div className="text-left">
-                      <div className="text-xs font-semibold text-dark-gray-900 uppercase tracking-wide">Salida</div>
-                      <div className="text-sm text-dark-gray-500">Agregar fechas</div>
+                      <div className="text-xs font-semibold text-gray-900 uppercase tracking-wide">Salida</div>
+                      <div className="text-sm text-gray-500">Agregar fechas</div>
                     </div>
                   </div>
-                  <div className="flex items-center justify-between px-6 py-4 border-l border-dark-gray-200">
+                  <div className="flex items-center justify-between px-6 py-4 border-l border-gray-200">
                     <div className="text-left">
-                      <div className="text-xs font-semibold text-dark-gray-900 uppercase tracking-wide">Huéspedes</div>
-                      <div className="text-sm text-dark-gray-500">¿Cuántos?</div>
+                      <div className="text-xs font-semibold text-gray-900 uppercase tracking-wide">Huéspedes</div>
+                      <div className="text-sm text-gray-500">¿Cuántos?</div>
                     </div>
-                    <Button className="bg-wine-red-500 hover:bg-wine-red-600 text-white rounded-full p-4 ml-4">
+                    <Button className="bg-coral-500 hover:bg-coral-600 text-white rounded-full p-4 ml-4">
                       <Search className="h-4 w-4" />
                     </Button>
                   </div>
@@ -189,45 +189,45 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Featured Properties */}
-        <section className="py-16 bg-cream-500">
+        {/* Propiedades populares estilo Airbnb */}
+        <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-3xl font-serif font-semibold text-dark-gray-900">
+              <h2 className="text-3xl font-semibold text-gray-900">
                 Alojamientos populares en Guaymas
               </h2>
-              <Button variant="outline" className="text-dark-gray-700 border-dark-gray-300 hover:bg-wine-red-500 hover:text-white">
+              <Button variant="outline" className="text-gray-700 border-gray-300">
                 Ver todos
               </Button>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
               {featuredProperties.map((property) => (
-                <Card key={property.id} className="border-0 shadow-none hover:shadow-lg transition-shadow duration-300 cursor-pointer group bg-cream-50">
+                <Card key={property.id} className="border-0 shadow-none hover:shadow-lg transition-shadow duration-300 cursor-pointer group">
                   <div className="relative overflow-hidden rounded-xl mb-3">
-                    <div className="aspect-square bg-gradient-to-br from-dark-gray-200 to-dark-gray-300 group-hover:scale-105 transition-transform duration-300">
-                      {/* Placeholder for image */}
-                      <div className="w-full h-full flex items-center justify-center text-dark-gray-500">
+                    <div className="aspect-square bg-gradient-to-br from-gray-200 to-gray-300 group-hover:scale-105 transition-transform duration-300">
+                      {/* Placeholder para imagen */}
+                      <div className="w-full h-full flex items-center justify-center text-gray-500">
                         <Home className="h-12 w-12" />
                       </div>
                     </div>
-                    <button className="absolute top-3 right-3 bg-cream-50/90 backdrop-blur-sm rounded-full p-2 hover:bg-cream-100 transition-all duration-200">
-                      <Heart className="h-4 w-4 text-dark-gray-600 hover:text-wine-red-500" />
+                    <button className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-all duration-200">
+                      <Heart className="h-4 w-4 text-gray-600 hover:text-coral-500" />
                     </button>
                   </div>
                   <CardContent className="p-0">
                     <div className="flex items-center justify-between mb-1">
-                      <h3 className="font-semibold text-dark-gray-900 text-sm truncate pr-2">{property.title}</h3>
+                      <h3 className="font-semibold text-gray-900 text-sm truncate pr-2">{property.title}</h3>
                       <div className="flex items-center">
-                        <Star className="h-3 w-3 text-dark-gray-900 fill-current" />
+                        <Star className="h-3 w-3 text-gray-900 fill-current" />
                         <span className="text-xs font-medium ml-1">{property.rating}</span>
                       </div>
                     </div>
-                    <p className="text-dark-gray-500 text-xs mb-1">{property.location}</p>
-                    <p className="text-dark-gray-500 text-xs mb-2">{property.dates}</p>
+                    <p className="text-gray-500 text-xs mb-1">{property.location}</p>
+                    <p className="text-gray-500 text-xs mb-2">{property.dates}</p>
                     <div className="flex items-baseline">
-                      <span className="font-semibold text-dark-gray-900">{property.price}</span>
-                      <span className="text-dark-gray-500 text-xs ml-1">MXN noche</span>
+                      <span className="font-semibold text-gray-900">{property.price}</span>
+                      <span className="text-gray-500 text-xs ml-1">MXN noche</span>
                     </div>
                   </CardContent>
                 </Card>
@@ -236,44 +236,44 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* "Available next month" Section */}
-        <section className="py-16 bg-cream-500">
+        {/* Sección "Disponibles el mes que viene" */}
+        <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-3xl font-serif font-semibold text-dark-gray-900">
+              <h2 className="text-3xl font-semibold text-gray-900">
                 Disponibles el mes que viene en Ciudad de México
               </h2>
-              <Button variant="outline" className="text-dark-gray-700 border-dark-gray-300 hover:bg-wine-red-500 hover:text-white">
+              <Button variant="outline" className="text-gray-700 border-gray-300">
                 Ver todos
               </Button>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {featuredProperties.slice(0, 4).map((property) => (
-                <Card key={`next-${property.id}`} className="border-0 shadow-none hover:shadow-lg transition-shadow duration-300 cursor-pointer group bg-cream-50">
+                <Card key={`next-${property.id}`} className="border-0 shadow-none hover:shadow-lg transition-shadow duration-300 cursor-pointer group">
                   <div className="relative overflow-hidden rounded-xl mb-3">
-                    <div className="aspect-[4/3] bg-gradient-to-br from-dark-gray-200 to-dark-gray-300 group-hover:scale-105 transition-transform duration-300">
-                      <div className="w-full h-full flex items-center justify-center text-dark-gray-500">
+                    <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-300 group-hover:scale-105 transition-transform duration-300">
+                      <div className="w-full h-full flex items-center justify-center text-gray-500">
                         <Home className="h-12 w-12" />
                       </div>
                     </div>
-                    <button className="absolute top-3 right-3 bg-cream-50/90 backdrop-blur-sm rounded-full p-2 hover:bg-cream-100 transition-all duration-200">
-                      <Heart className="h-4 w-4 text-dark-gray-600 hover:text-wine-red-500" />
+                    <button className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-all duration-200">
+                      <Heart className="h-4 w-4 text-gray-600 hover:text-coral-500" />
                     </button>
                   </div>
                   <CardContent className="p-0">
                     <div className="flex items-center justify-between mb-1">
-                      <h3 className="font-semibold text-dark-gray-900 text-sm">{property.title}</h3>
+                      <h3 className="font-semibold text-gray-900 text-sm">{property.title}</h3>
                       <div className="flex items-center">
-                        <Star className="h-3 w-3 text-dark-gray-900 fill-current" />
+                        <Star className="h-3 w-3 text-gray-900 fill-current" />
                         <span className="text-xs font-medium ml-1">{property.rating}</span>
                       </div>
                     </div>
-                    <p className="text-dark-gray-500 text-xs mb-1">{property.location}</p>
-                    <p className="text-dark-gray-500 text-xs mb-2">{property.guests}</p>
+                    <p className="text-gray-500 text-xs mb-1">{property.location}</p>
+                    <p className="text-gray-500 text-xs mb-2">{property.guests}</p>
                     <div className="flex items-baseline">
-                      <span className="font-semibold text-dark-gray-900">{property.price}</span>
-                      <span className="text-dark-gray-500 text-xs ml-1">MXN noche</span>
+                      <span className="font-semibold text-gray-900">{property.price}</span>
+                      <span className="text-gray-500 text-xs ml-1">MXN noche</span>
                     </div>
                   </CardContent>
                 </Card>
@@ -282,8 +282,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-cream-100 border-t border-dark-gray-200 py-12">
+        {/* Footer simplificado */}
+        <footer className="bg-gray-50 border-t border-gray-200 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div>
